@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob-container" id="blob-container"></div>
+    <h1>Border Radius Previewer</h1>
+
+    <main>
+        <input type="range" id="top" oninput="Slide()" value="0" min="0" max="100">
+        <input type="range" id="left" value="0" oninput="Slide()" min="0" max="100"><div id="square"></div><input type="range" id="right" value="0" oninput="Slide()" min="0" max="100">
+        <input type="range" id="bottom" value="100" oninput="Slide()" min="0" max="100">
+    </main>
+
+    <section>
+        border-radius:
+        <label id="output"></label>
+        <button onclick="copy()">copy</button>
+    </section>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
